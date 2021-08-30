@@ -1,0 +1,9 @@
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.deps.json
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.dll
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.pdb
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.csproj.AssemblyReference.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.AssemblyInfoInputs.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.AssemblyInfo.cs
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.csproj.CoreCompileInputs.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.dll
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\Application\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.Application.pdb

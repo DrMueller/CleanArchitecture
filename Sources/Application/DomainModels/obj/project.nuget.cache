@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZOpbiKlvQSbd945HUS0oTb207T+BHuNWP8iyTGAz/zGZ0C9B/WBqZdXF00U6ze7LLoovhVQ8t8kft2kYZaoiXg==",
+  "success": true,
+  "projectFilePath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mlm\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

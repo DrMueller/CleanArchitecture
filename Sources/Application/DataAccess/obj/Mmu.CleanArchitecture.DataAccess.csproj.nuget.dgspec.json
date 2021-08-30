@@ -1,0 +1,369 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj": {}
+  },
+  "projects": {
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\Mmu.CleanArchitecture.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\Mmu.CleanArchitecture.Application.csproj",
+        "projectName": "Mmu.CleanArchitecture.Application",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\Mmu.CleanArchitecture.Application.csproj",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
+        "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Lamar": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
+        "projectName": "Mmu.CleanArchitecture.Common",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
+        "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2021.2.0, )"
+            },
+            "Microsoft.CodeAnalysis.NetAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.VisualStudio.Threading.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.10.56, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj",
+        "projectName": "Mmu.CleanArchitecture.DataAccess",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
+        "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\Mmu.CleanArchitecture.Application.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Application\\Mmu.CleanArchitecture.Application.csproj"
+              },
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+              },
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj",
+        "projectName": "Mmu.CleanArchitecture.DomainModels",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
+        "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj",
+        "projectName": "Mmu.CleanArchitecture.DomainServices",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj",
+        "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
+        "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+              },
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

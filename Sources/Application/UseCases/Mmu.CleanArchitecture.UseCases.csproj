@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+			<Features>IOperation</Features>
+			<CodeAnalysisRuleSet>..\..\..\CA_ProductionCode.ruleset</CodeAnalysisRuleSet>
+			<AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Mmu.CleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\Common\Mmu.CleanArchitecture.Common.csproj" />
+    <ProjectReference Include="..\DomainServices\Mmu.CleanArchitecture.DomainServices.csproj" />
+  </ItemGroup>
+
+</Project>

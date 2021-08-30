@@ -1,0 +1,9 @@
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.deps.json
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.dll
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.pdb
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.csproj.AssemblyReference.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.AssemblyInfoInputs.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.AssemblyInfo.cs
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.csproj.CoreCompileInputs.cache
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.dll
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainServices\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DomainServices.pdb

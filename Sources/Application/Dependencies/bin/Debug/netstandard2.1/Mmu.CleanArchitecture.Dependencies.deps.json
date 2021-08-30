@@ -1,0 +1,48 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "Mmu.CleanArchitecture.Dependencies/1.0.0": {
+        "dependencies": {
+          "Mmu.CleanArchitecture.DataAccess": "1.0.0",
+          "Mmu.CleanArchitecture.DomainServices": "1.0.0"
+        },
+        "runtime": {
+          "Mmu.CleanArchitecture.Dependencies.dll": {}
+        }
+      },
+      "Mmu.CleanArchitecture.DataAccess/1.0.0": {
+        "runtime": {
+          "Mmu.CleanArchitecture.DataAccess.dll": {}
+        }
+      },
+      "Mmu.CleanArchitecture.DomainServices/1.0.0": {
+        "runtime": {
+          "Mmu.CleanArchitecture.DomainServices.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mmu.CleanArchitecture.Dependencies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mmu.CleanArchitecture.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mmu.CleanArchitecture.DomainServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
