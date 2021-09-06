@@ -5,7 +5,7 @@ using System.Net.Mime;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Http;
-using Mmu.CleanArchitecture.Application.Areas.Logging.Services;
+using Mmu.CleanArchitecture.CrossCutting.Areas.Logging.Services;
 using Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Models;
 using Newtonsoft.Json;
 
@@ -24,7 +24,6 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Middlewa
         }
 
         [SuppressMessage("Design", "CA1031:Do not catch general exception types", Justification = "Global exception handler")]
-        [SuppressMessage("Style", "VSTHRD200:Use \"Async\" suffix for async methods", Justification = "Convention for middlewares")]
         public async Task Invoke(HttpContext httpContext)
         {
             try

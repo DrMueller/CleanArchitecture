@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace Mmu.CleanArchitecture.Common.Areas.FunctionResults
+namespace Mmu.CleanArchitecture.LanguageExtensions.Areas.FunctionResults
 {
     public class FunctionResult<T> : FunctionResult
     {

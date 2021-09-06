@@ -4,12 +4,12 @@
     "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj": {}
   },
   "projects": {
-    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
+    "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
-        "projectName": "Mmu.CleanArchitecture.Common",
-        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
+        "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj",
+        "projectName": "Mmu.CleanArchitecture.LanguageExtensions",
+        "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj",
         "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
         "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\obj\\",
         "projectStyle": "PackageReference",
@@ -108,8 +108,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
-                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+              "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj": {
+                "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj"
               }
             }
           }

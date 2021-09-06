@@ -3,16 +3,15 @@ using System.Collections.Concurrent;
 using System.Linq;
 using JetBrains.Annotations;
 using Lamar;
-using Mmu.CleanArchitecture.Common.Areas.FunctionResults;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts;
-using Mmu.CleanArchitecture.DataAccess.Areas.Repositories;
 using Mmu.CleanArchitecture.DataAccess.Areas.Repositories.Base;
-using Mmu.CleanArchitecture.DomainServices.Areas.Common.DataAccess.Repositories;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.Repositories;
+using Mmu.CleanArchitecture.LanguageExtensions.Areas.FunctionResults;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.UnitOfWorks.Servants.Implementation
 {
     [UsedImplicitly]
-    internal class RepositoryCache : IRepositoryCache
+    public class RepositoryCache : IRepositoryCache
     {
         private readonly IContainer _container;
         private readonly ConcurrentDictionary<Type, IRepository> _repos;

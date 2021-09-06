@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Mmu.CleanArchitecture.DomainModels.Areas.Base;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Models;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Base

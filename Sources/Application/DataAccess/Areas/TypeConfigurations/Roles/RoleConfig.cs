@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Base;
-using Mmu.CleanArchitecture.DomainModels.Areas.Roles;
+using Mmu.CleanArchitecture.DomainModels.Areas.Roles.Models;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Roles
 {
@@ -19,7 +19,7 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Roles
                 .WithMany(org => org.Roles)
                 .IsRequired();
 
-            builder.ToTable(nameof(Role), Constants.Schemas.Roles);
+            builder.ToTable(nameof(Role), Schemas.Roles);
         }
     }
 }

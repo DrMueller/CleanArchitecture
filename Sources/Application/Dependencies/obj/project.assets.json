@@ -478,6 +478,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "NLog/4.7.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1544,32 +1553,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Mmu.CleanArchitecture.Application/1.0.0": {
+      "Mmu.CleanArchitecture.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Lamar": "6.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
-          "Mmu.CleanArchitecture.Common": "1.0.0"
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0",
+          "NLog": "4.7.11"
         },
         "compile": {
-          "bin/placeholder/Mmu.CleanArchitecture.Application.dll": {}
+          "bin/placeholder/Mmu.CleanArchitecture.CrossCutting.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Mmu.CleanArchitecture.Application.dll": {}
-        }
-      },
-      "Mmu.CleanArchitecture.Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "JetBrains.Annotations": "2021.2.0"
-        },
-        "compile": {
-          "bin/placeholder/Mmu.CleanArchitecture.Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Mmu.CleanArchitecture.Common.dll": {}
+          "bin/placeholder/Mmu.CleanArchitecture.CrossCutting.dll": {}
         }
       },
       "Mmu.CleanArchitecture.DataAccess/1.0.0": {
@@ -1577,9 +1574,9 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
-          "Mmu.CleanArchitecture.Application": "1.0.0",
-          "Mmu.CleanArchitecture.Common": "1.0.0",
-          "Mmu.CleanArchitecture.DomainServices": "1.0.0"
+          "Mmu.CleanArchitecture.CrossCutting": "1.0.0",
+          "Mmu.CleanArchitecture.DomainServices": "1.0.0",
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Mmu.CleanArchitecture.DataAccess.dll": {}
@@ -1592,7 +1589,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Mmu.CleanArchitecture.Common": "1.0.0"
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Mmu.CleanArchitecture.DomainModels.dll": {}
@@ -1605,14 +1602,27 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Mmu.CleanArchitecture.Common": "1.0.0",
-          "Mmu.CleanArchitecture.DomainModels": "1.0.0"
+          "Mmu.CleanArchitecture.DomainModels": "1.0.0",
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Mmu.CleanArchitecture.DomainServices.dll": {}
         },
         "runtime": {
           "bin/placeholder/Mmu.CleanArchitecture.DomainServices.dll": {}
+        }
+      },
+      "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JetBrains.Annotations": "2021.2.0"
+        },
+        "compile": {
+          "bin/placeholder/Mmu.CleanArchitecture.LanguageExtensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mmu.CleanArchitecture.LanguageExtensions.dll": {}
         }
       }
     }
@@ -2367,6 +2377,39 @@
         "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "NLog/4.7.11": {
+      "sha512": "A7EpoOjWesV5BPx1cOiBndazZq1VGdagIs6oK8ttcRDl5adCMtHiTqnsD5yYaOrMxOQeCjHBf/w3nKzCmhGbgw==",
+      "type": "package",
+      "path": "nlog/4.7.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.11.nupkg.sha512",
+        "nlog.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5994,15 +6037,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Mmu.CleanArchitecture.Application/1.0.0": {
+    "Mmu.CleanArchitecture.CrossCutting/1.0.0": {
       "type": "project",
-      "path": "../Application/Mmu.CleanArchitecture.Application.csproj",
-      "msbuildProject": "../Application/Mmu.CleanArchitecture.Application.csproj"
-    },
-    "Mmu.CleanArchitecture.Common/1.0.0": {
-      "type": "project",
-      "path": "../Common/Mmu.CleanArchitecture.Common.csproj",
-      "msbuildProject": "../Common/Mmu.CleanArchitecture.Common.csproj"
+      "path": "../CrossCutting/Mmu.CleanArchitecture.CrossCutting.csproj",
+      "msbuildProject": "../CrossCutting/Mmu.CleanArchitecture.CrossCutting.csproj"
     },
     "Mmu.CleanArchitecture.DataAccess/1.0.0": {
       "type": "project",
@@ -6018,12 +6056,16 @@
       "type": "project",
       "path": "../DomainServices/Mmu.CleanArchitecture.DomainServices.csproj",
       "msbuildProject": "../DomainServices/Mmu.CleanArchitecture.DomainServices.csproj"
+    },
+    "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
+      "type": "project",
+      "path": "../Common/Mmu.CleanArchitecture.LanguageExtensions.csproj",
+      "msbuildProject": "../Common/Mmu.CleanArchitecture.LanguageExtensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Mmu.CleanArchitecture.DataAccess >= 1.0.0",
-      "Mmu.CleanArchitecture.DomainServices >= 1.0.0"
+      "Mmu.CleanArchitecture.DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6060,9 +6102,6 @@
           "projectReferences": {
             "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj": {
               "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj"
-            },
-            "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj": {
-              "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainServices\\Mmu.CleanArchitecture.DomainServices.csproj"
             }
           }
         }

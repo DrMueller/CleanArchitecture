@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using JetBrains.Annotations;
-using Mmu.CleanArchitecture.Common.Areas.Invariance.Servants;
+using Mmu.CleanArchitecture.LanguageExtensions.Areas.Invariance.Servants;
 
-namespace Mmu.CleanArchitecture.Common.Areas.Invariance
+namespace Mmu.CleanArchitecture.LanguageExtensions.Areas.Invariance
 {
     [PublicAPI]
     public static class Guard

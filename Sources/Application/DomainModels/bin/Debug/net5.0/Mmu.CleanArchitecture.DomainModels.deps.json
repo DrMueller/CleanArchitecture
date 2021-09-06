@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Mmu.CleanArchitecture.DomainModels/1.0.0": {
         "dependencies": {
-          "Mmu.CleanArchitecture.Common": "1.0.0"
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "runtime": {
           "Mmu.CleanArchitecture.DomainModels.dll": {}
@@ -22,12 +22,12 @@
           }
         }
       },
-      "Mmu.CleanArchitecture.Common/1.0.0": {
+      "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
         "dependencies": {
           "JetBrains.Annotations": "2021.2.0"
         },
         "runtime": {
-          "Mmu.CleanArchitecture.Common.dll": {}
+          "Mmu.CleanArchitecture.LanguageExtensions.dll": {}
         }
       }
     }
@@ -45,7 +45,7 @@
       "path": "jetbrains.annotations/2021.2.0",
       "hashPath": "jetbrains.annotations.2021.2.0.nupkg.sha512"
     },
-    "Mmu.CleanArchitecture.Common/1.0.0": {
+    "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

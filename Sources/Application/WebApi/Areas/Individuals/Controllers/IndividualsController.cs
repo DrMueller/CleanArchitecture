@@ -2,9 +2,14 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Mmu.CleanArchitecture.UseCases.Areas.Individuals.CreateIndividual.Cases;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.AppendRole.Dto;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.AppendRole.Interactors;
 using Mmu.CleanArchitecture.UseCases.Areas.Individuals.CreateIndividual.Dtos;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.CreateIndividual.Interactors;
 using Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadAllIndividuals.Dtos;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadAllIndividuals.Interactors;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadFirstIndividualWithRoles.Dtos;
+using Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadFirstIndividualWithRoles.Interactors;
 
 namespace Mmu.CleanArchitecture.WebApi.Areas.Individuals.Controllers
 {
@@ -13,11 +18,29 @@ namespace Mmu.CleanArchitecture.WebApi.Areas.Individuals.Controllers
     [Route("api/[controller]")]
     public class IndividualsController : ControllerBase
     {
-        private readonly ICreateIndividualUseCase _createIndividualUseCase;
+        private readonly IAppendRoleInteractor _appendRoleUseCase;
+        private readonly ICreateIndividualInteractor _createIndividualUseCase;
+        private readonly ILoadAllIndividualsInteractor _loadAllIndividualsUseCase;
+        private readonly ILoadFirstIndividualWithRolesInteractor _loadFirstIndividualWithRolesUseCase;
 
-        public IndividualsController(ICreateIndividualUseCase createIndividualUseCase)
+        public IndividualsController(
+            ICreateIndividualInteractor createIndividualUseCase,
+            ILoadAllIndividualsInteractor loadAllIndividualsUseCase,
+            ILoadFirstIndividualWithRolesInteractor loadFirstIndividualWithRolesUseCase,
+            IAppendRoleInteractor appendRoleUseCase)
         {
             _createIndividualUseCase = createIndividualUseCase;
+            _loadAllIndividualsUseCase = loadAllIndividualsUseCase;
+            _loadFirstIndividualWithRolesUseCase = loadFirstIndividualWithRolesUseCase;
+            _appendRoleUseCase = appendRoleUseCase;
+        }
+
+        [HttpPost("{individualId:long}/roles")]
+        public async Task<IActionResult> AppendRoleAsync([FromRoute] long individualId, [FromBody] AppendRoleRequestDto dto)
+        {
+            await _appendRoleUseCase.ExecuteAsync(individualId, dto);
+
+            return Ok();
         }
 
         [HttpPost]
@@ -29,9 +52,19 @@ namespace Mmu.CleanArchitecture.WebApi.Areas.Individuals.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyCollection<CreateIndividualRequestDto>>> LoadAllAsync()
+        public async Task<ActionResult<IReadOnlyCollection<IndividualResultDto>>> LoadAllAsync()
         {
-            return null;
+            var allIndividuals = await _loadAllIndividualsUseCase.ExecuteAsync();
+
+            return Ok(allIndividuals);
+        }
+
+        [HttpGet("first")]
+        public async Task<ActionResult<IndividualWithRolesDto>> LoadFirstIndividualWithRolesASync()
+        {
+            var individualWithRoles = await _loadFirstIndividualWithRolesUseCase.ExecuteAsync();
+
+            return Ok(individualWithRoles);
         }
     }
 }

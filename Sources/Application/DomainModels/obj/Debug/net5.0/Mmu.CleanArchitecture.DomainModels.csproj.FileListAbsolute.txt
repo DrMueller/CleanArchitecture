@@ -2,8 +2,8 @@ C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\n
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.DomainModels.dll
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\ref\Mmu.CleanArchitecture.DomainModels.dll
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.DomainModels.pdb
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.Common.dll
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.Common.pdb
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.LanguageExtensions.dll
+C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\bin\Debug\net5.0\Mmu.CleanArchitecture.LanguageExtensions.pdb
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\obj\Debug\net5.0\Mmu.CleanArchitecture.DomainModels.csproj.AssemblyReference.cache
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\obj\Debug\net5.0\Mmu.CleanArchitecture.DomainModels.GeneratedMSBuildEditorConfig.editorconfig
 C:\MyGit\Personal\CleanArchitecture\Sources\Application\DomainModels\obj\Debug\net5.0\Mmu.CleanArchitecture.DomainModels.AssemblyInfoInputs.cache

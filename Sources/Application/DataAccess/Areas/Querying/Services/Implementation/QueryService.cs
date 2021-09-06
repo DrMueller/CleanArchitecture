@@ -1,35 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Factories;
-using Mmu.CleanArchitecture.DataAccess.Areas.Querying.Services.Servants;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Models;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Specifications;
-using Mmu.CleanArchitecture.DomainServices.Areas.Common.DataAccess.Querying.Services;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.Querying.Services;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.Querying.Services.Implementation
 {
     public class QueryService : IQueryService
     {
         private readonly IAppDbContextFactory _appDbContextFactory;
-        private readonly ISpecificationEvaluator _specEvaluator;
 
-        protected QueryService(
-            IAppDbContextFactory appDbContextFactory,
-            ISpecificationEvaluator specEvaluator)
+        public QueryService(IAppDbContextFactory appDbContextFactory)
         {
             _appDbContextFactory = appDbContextFactory;
-            _specEvaluator = specEvaluator;
         }
 
-        public async Task<IReadOnlyCollection<TResult>> QueryAsync<TEntity, TResult>(ISelectSpecification<TEntity, TResult> spec) where TEntity : EntityBase
+        public async Task<IReadOnlyCollection<TResult>> QueryAsync<TEntity, TResult>(ISpecification<TEntity, TResult> spec) where TEntity : EntityBase
         {
             using var appDbContext = _appDbContextFactory.Create();
             var dbSet = appDbContext.Set<TEntity>().AsNoTracking();
 
-            var query = _specEvaluator.ApplySpecification(dbSet, spec);
+            var query = spec.Apply(dbSet);
 
             var selectSet = query.Select(spec.Selector);
             var result = await selectSet.ToListAsync();
@@ -41,10 +35,10 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.Querying.Services.Implementatio
         {
             using var appDbContext = _appDbContextFactory.Create();
             var dbSet = appDbContext.Set<TEntity>().AsNoTracking();
+            var query = spec.Apply(dbSet);
 
-            var query =  _specEvaluator.ApplySpecification(dbSet, spec);
-            
             var result = await query.ToListAsync();
+
             return result;
         }
     }

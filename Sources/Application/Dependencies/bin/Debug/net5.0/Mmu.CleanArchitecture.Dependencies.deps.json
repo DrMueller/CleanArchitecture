@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Mmu.CleanArchitecture.Dependencies/1.0.0": {
         "dependencies": {
-          "Mmu.CleanArchitecture.DataAccess": "1.0.0",
-          "Mmu.CleanArchitecture.DomainServices": "1.0.0"
+          "Mmu.CleanArchitecture.DataAccess": "1.0.0"
         },
         "runtime": {
           "Mmu.CleanArchitecture.Dependencies.dll": {}
@@ -426,6 +425,14 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.1.20720"
+          }
+        }
+      },
+      "NLog/4.7.11": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.11.13229"
           }
         }
       },
@@ -1081,30 +1088,23 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "Mmu.CleanArchitecture.Application/1.0.0": {
+      "Mmu.CleanArchitecture.CrossCutting/1.0.0": {
         "dependencies": {
           "Lamar": "6.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
-          "Mmu.CleanArchitecture.Common": "1.0.0"
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0",
+          "NLog": "4.7.11"
         },
         "runtime": {
-          "Mmu.CleanArchitecture.Application.dll": {}
-        }
-      },
-      "Mmu.CleanArchitecture.Common/1.0.0": {
-        "dependencies": {
-          "JetBrains.Annotations": "2021.2.0"
-        },
-        "runtime": {
-          "Mmu.CleanArchitecture.Common.dll": {}
+          "Mmu.CleanArchitecture.CrossCutting.dll": {}
         }
       },
       "Mmu.CleanArchitecture.DataAccess/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
-          "Mmu.CleanArchitecture.Application": "1.0.0",
-          "Mmu.CleanArchitecture.Common": "1.0.0",
-          "Mmu.CleanArchitecture.DomainServices": "1.0.0"
+          "Mmu.CleanArchitecture.CrossCutting": "1.0.0",
+          "Mmu.CleanArchitecture.DomainServices": "1.0.0",
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "runtime": {
           "Mmu.CleanArchitecture.DataAccess.dll": {}
@@ -1112,7 +1112,7 @@
       },
       "Mmu.CleanArchitecture.DomainModels/1.0.0": {
         "dependencies": {
-          "Mmu.CleanArchitecture.Common": "1.0.0"
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "runtime": {
           "Mmu.CleanArchitecture.DomainModels.dll": {}
@@ -1120,11 +1120,19 @@
       },
       "Mmu.CleanArchitecture.DomainServices/1.0.0": {
         "dependencies": {
-          "Mmu.CleanArchitecture.Common": "1.0.0",
-          "Mmu.CleanArchitecture.DomainModels": "1.0.0"
+          "Mmu.CleanArchitecture.DomainModels": "1.0.0",
+          "Mmu.CleanArchitecture.LanguageExtensions": "1.0.0"
         },
         "runtime": {
           "Mmu.CleanArchitecture.DomainServices.dll": {}
+        }
+      },
+      "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
+        "dependencies": {
+          "JetBrains.Annotations": "2021.2.0"
+        },
+        "runtime": {
+          "Mmu.CleanArchitecture.LanguageExtensions.dll": {}
         }
       }
     }
@@ -1358,6 +1366,13 @@
       "sha512": "sha512-ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "path": "newtonsoft.json/10.0.1",
       "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
+    },
+    "NLog/4.7.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A7EpoOjWesV5BPx1cOiBndazZq1VGdagIs6oK8ttcRDl5adCMtHiTqnsD5yYaOrMxOQeCjHBf/w3nKzCmhGbgw==",
+      "path": "nlog/4.7.11",
+      "hashPath": "nlog.4.7.11.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",
@@ -1835,12 +1850,7 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "Mmu.CleanArchitecture.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Mmu.CleanArchitecture.Common/1.0.0": {
+    "Mmu.CleanArchitecture.CrossCutting/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1856,6 +1866,11 @@
       "sha512": ""
     },
     "Mmu.CleanArchitecture.DomainServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

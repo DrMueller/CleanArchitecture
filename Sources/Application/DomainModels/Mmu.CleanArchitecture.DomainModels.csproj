@@ -8,11 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Common\Mmu.CleanArchitecture.Common.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Infrastructure\" />
+	  <ProjectReference Include="..\Common\Mmu.CleanArchitecture.LanguageExtensions.csproj" />
 	</ItemGroup>
 
 </Project>

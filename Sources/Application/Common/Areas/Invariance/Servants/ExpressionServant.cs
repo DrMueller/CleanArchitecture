@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Mmu.CleanArchitecture.Common.Areas.Invariance.Servants
+namespace Mmu.CleanArchitecture.LanguageExtensions.Areas.Invariance.Servants
 {
     internal static class ExpressionServant
     {

@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 using Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Initialization;
 
 namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
 {
     internal static class AppInitialization
     {
-        internal static void InitializeApplication(IApplicationBuilder app, IWebHostEnvironment env)
+        internal static void InitializeApplication(IApplicationBuilder app)
         {
             app.UseGlobalExceptionHandler();
-             app.UseStaticFiles();
+            app.UseStaticFiles();
             app.UseSwagger();
             app.UseSwaggerUI(
                 config =>

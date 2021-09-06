@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Base;
-using Mmu.CleanArchitecture.DomainModels.Areas.Individuals;
+using Mmu.CleanArchitecture.DomainModels.Areas.Individuals.Models;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Individuals
 {
@@ -13,7 +13,7 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Individuals
             builder.Property(f => f.FirstName).HasMaxLength(100).IsRequired();
             builder.Property(f => f.Gender).IsRequired();
             builder.Property(f => f.LastName).HasMaxLength(100).IsRequired();
-            builder.ToTable(nameof(Individual), Constants.Schemas.Individuals);
+            builder.ToTable(nameof(Individual), Schemas.Individuals);
         }
     }
 }

@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Lamar;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using Mmu.CleanArchitecture.Application.Areas.Settings.Models;
+using Mmu.CleanArchitecture.CrossCutting.Areas.Settings.Models;
 using Mmu.CleanArchitecture.WebApi.Infrastructure.Security;
 
 namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
@@ -29,6 +28,13 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
             ConfigureCors(services);
         }
 
+        private static void ConfigureAuthentication(IServiceCollection services)
+        {
+            services
+                .AddAuthentication("BasicAuthentication")
+                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+        }
+
         private static void ConfigureCors(IServiceCollection services)
         {
             services.AddCors(
@@ -42,13 +48,6 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
                                 .AllowAnyHeader()
                                 .AllowAnyMethod());
                 });
-        }
-
-        private static void ConfigureAuthentication(IServiceCollection services)
-        {
-            services
-                .AddAuthentication("BasicAuthentication")
-                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
         }
 
         private static void ConfigureSwagger(IServiceCollection services)
@@ -94,8 +93,6 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
                             }
                         });
                 });
-
         }
     }
-
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using JetBrains.Annotations;
-using Mmu.CleanArchitecture.Common.Areas.Invariance;
+using Mmu.CleanArchitecture.LanguageExtensions.Areas.Invariance;
 
 namespace Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Models
 {

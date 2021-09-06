@@ -1,46 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Models;
+using Mmu.CleanArchitecture.DomainModels.Areas.Base.Specifications;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.Repositories;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.Repositories.Base.Implementation
 {
-    public abstract class RepositoryBase<TEntity> : IRepositoryBase
+    public abstract class RepositoryBase<TEntity> : IRepositoryBase, IRepository<TEntity>
         where TEntity : EntityBase
     {
-        private DbSet<TEntity> _dbSet;
+        protected DbSet<TEntity> DbSet { get; private set; }
 
         public async Task DeleteAsync(long id)
         {
-            var loadedEntity = await LoadAsync(qry => qry.SingleOrDefaultAsync(f => f.Id.Equals(id)));
+            var loadedEntity = await DbSet.SingleOrDefaultAsync(f => f.Id == id);
 
             if (loadedEntity == null)
             {
                 return;
             }
 
-            _dbSet.Remove(loadedEntity);
+            DbSet.Remove(loadedEntity);
         }
 
-        protected async Task<TResult> LoadAsync<TResult>(Func<IQueryable<TEntity>, Task<TResult>> queryBuilder)
+        public Task DeleteAsync(ISpecification<TEntity> spec)
         {
-            var qry = await queryBuilder(_dbSet);
+            throw new NotImplementedException();
+        }
 
-            return qry;
+        public async Task<IReadOnlyCollection<TEntity>> LoadAllAsync(ISpecification<TEntity> spec)
+        {
+            var qry = spec.Apply(DbSet);
+
+            return await qry.ToListAsync();
+        }
+
+        public async Task<TEntity> LoadAsync(ISpecification<TEntity> spec)
+        {
+            var qry = spec.Apply(DbSet);
+
+            return await qry.SingleOrDefaultAsync();
         }
 
         public async Task UpsertAsync(TEntity entity)
         {
             if (entity.Id.Equals(default))
             {
-                await _dbSet.AddAsync(entity);
+                await DbSet.AddAsync(entity);
             }
             else
             {
-                _dbSet.Update(entity);
+                DbSet.Update(entity);
             }
         }
 
@@ -54,7 +67,7 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.Repositories.Base.Implementatio
 
         void IRepositoryBase.Initialize(IAppDbContext dbContext)
         {
-            _dbSet = dbContext.Set<TEntity>();
+            DbSet = dbContext.Set<TEntity>();
         }
     }
 }

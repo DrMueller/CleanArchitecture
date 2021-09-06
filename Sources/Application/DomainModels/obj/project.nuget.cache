@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZOpbiKlvQSbd945HUS0oTb207T+BHuNWP8iyTGAz/zGZ0C9B/WBqZdXF00U6ze7LLoovhVQ8t8kft2kYZaoiXg==",
+  "dgSpecHash": "wAIRRDu/YRfGFl9F0ZEIHb3dAIHgfu5kMa4JfsmAoh4qiSgfLSXif3x43Jrbo+EyI1qf4ewtFJrlS4uOjXTfIg==",
   "success": true,
   "projectFilePath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DomainModels\\Mmu.CleanArchitecture.DomainModels.csproj",
   "expectedPackageFiles": [

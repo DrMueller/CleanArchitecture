@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rNbcgmtDXiuynw1MEyxmJioPYOH4qukAfOzrHJCh18ra9UyKz9jfBzpN+AB23ZqvOqJOwrYXo0Qu/50AkvW1ow==",
+  "dgSpecHash": "pG2mbvthHZR0wWbM9ab3+0l0b8azZ3Qi7zfKw/FaL41cl/5g8PGXVkEoTQAGUL6XzEGD4lr4jF0GZGGcnXIGKA==",
   "success": true,
   "projectFilePath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\DataAccess\\Mmu.CleanArchitecture.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\mlm\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\mlm\\.nuget\\packages\\nlog\\4.7.11\\nlog.4.7.11.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

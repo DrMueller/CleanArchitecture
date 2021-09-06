@@ -1,8 +1,0 @@
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.deps.json
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.dll
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\bin\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.pdb
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.AssemblyInfoInputs.cache
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.AssemblyInfo.cs
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.csproj.CoreCompileInputs.cache
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.dll
-C:\MyGit\Personal\CleanArchitecture\Sources\Application\DataAccess\obj\Debug\netstandard2.1\Mmu.CleanArchitecture.DataAccess.pdb

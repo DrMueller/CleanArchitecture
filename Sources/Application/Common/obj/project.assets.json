@@ -286,9 +286,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
-      "projectName": "Mmu.CleanArchitecture.Common",
-      "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
+      "projectUniqueName": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj",
+      "projectName": "Mmu.CleanArchitecture.LanguageExtensions",
+      "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj",
       "packagesPath": "C:\\Users\\mlm\\.nuget\\packages\\",
       "outputPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\obj\\",
       "projectStyle": "PackageReference",

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Mmu.CleanArchitecture.Common.Areas.Collections
+namespace Mmu.CleanArchitecture.LanguageExtensions.Areas.Collections
 {
     public static class EnumerableExtensions
     {

@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\Mmu.CleanArchitecture.DataAccess.csproj" />
-    <ProjectReference Include="..\DomainServices\Mmu.CleanArchitecture.DomainServices.csproj" />
   </ItemGroup>
 
 </Project>

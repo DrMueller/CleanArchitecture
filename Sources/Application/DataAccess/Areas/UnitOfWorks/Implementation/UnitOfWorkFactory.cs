@@ -1,6 +1,6 @@
 ﻿using Lamar;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Factories;
-using Mmu.CleanArchitecture.DomainServices.Areas.Common.DataAccess.UnitOfWorks;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.UnitOfWorks;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.UnitOfWorks.Implementation
 {

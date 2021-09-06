@@ -3,21 +3,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts;
-using Mmu.CleanArchitecture.DataAccess.Areas.Repositories;
 using Mmu.CleanArchitecture.DataAccess.Areas.UnitOfWorks.Servants;
-using Mmu.CleanArchitecture.DomainModels.Areas.Base;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Models;
-using Mmu.CleanArchitecture.DomainServices.Areas.Common.DataAccess.Repositories;
-using Mmu.CleanArchitecture.DomainServices.Areas.Common.DataAccess.UnitOfWorks;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.Repositories;
+using Mmu.CleanArchitecture.DomainServices.Areas.Common.UnitOfWorks;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.UnitOfWorks.Implementation
 {
-    public class UnitOfWork : IUnitOfWork
+    public sealed class UnitOfWork : IUnitOfWork
     {
         private readonly IRepositoryCache _repoCache;
         private IAppDbContext _dbContext;
 
-        protected UnitOfWork(IRepositoryCache repoCache)
+        public UnitOfWork(IRepositoryCache repoCache)
         {
             _repoCache = repoCache;
         }
@@ -27,16 +25,23 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.UnitOfWorks.Implementation
             _dbContext?.Dispose();
         }
 
-        public void Initialize(IAppDbContext dbContext)
+        public IRepository<TEntity> GetGenericRepository<TEntity>() where TEntity : EntityBase
         {
-            _dbContext = dbContext;
+            var repoType = typeof(IRepository<TEntity>);
+
+            return _repoCache.GetRepository<IRepository<TEntity>>(repoType, _dbContext);
         }
 
         public TRepo GetRepository<TRepo>() where TRepo : IRepository
         {
+            var repoType = typeof(TRepo);
 
-            var repoType = typeof(IRepository);
             return _repoCache.GetRepository<TRepo>(repoType, _dbContext);
+        }
+
+        public void Initialize(IAppDbContext dbContext)
+        {
+            _dbContext = dbContext;
         }
 
         public async Task SaveAsync()

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Lamar;
+﻿using Lamar;
 
 namespace Mmu.CleanArchitecture.WebApi.Infrastructure.DependencyInjection
 {
@@ -10,11 +6,12 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.DependencyInjection
     {
         public RegistryCollection()
         {
-            Scan(scanner =>
-            {
-                scanner.AssemblyContainingType<RegistryCollection>();
-                scanner.WithDefaultConventions();
-            });
+            Scan(
+                scanner =>
+                {
+                    scanner.AssemblyContainingType<RegistryCollection>();
+                    scanner.WithDefaultConventions();
+                });
         }
     }
 }

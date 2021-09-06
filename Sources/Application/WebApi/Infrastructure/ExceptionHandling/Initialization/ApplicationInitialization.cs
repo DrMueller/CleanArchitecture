@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
-using Mmu.CleanArchitecture.Common.Areas.Invariance;
+using Mmu.CleanArchitecture.LanguageExtensions.Areas.Invariance;
 using Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Middlewares;
 
 namespace Mmu.CleanArchitecture.WebApi.Infrastructure.ExceptionHandling.Initialization

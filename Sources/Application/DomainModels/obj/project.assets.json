@@ -11,17 +11,17 @@
           "lib/netstandard2.0/JetBrains.Annotations.dll": {}
         }
       },
-      "Mmu.CleanArchitecture.Common/1.0.0": {
+      "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "JetBrains.Annotations": "2021.2.0"
         },
         "compile": {
-          "bin/placeholder/Mmu.CleanArchitecture.Common.dll": {}
+          "bin/placeholder/Mmu.CleanArchitecture.LanguageExtensions.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Mmu.CleanArchitecture.Common.dll": {}
+          "bin/placeholder/Mmu.CleanArchitecture.LanguageExtensions.dll": {}
         }
       }
     }
@@ -49,15 +49,15 @@
         "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
-    "Mmu.CleanArchitecture.Common/1.0.0": {
+    "Mmu.CleanArchitecture.LanguageExtensions/1.0.0": {
       "type": "project",
-      "path": "../Common/Mmu.CleanArchitecture.Common.csproj",
-      "msbuildProject": "../Common/Mmu.CleanArchitecture.Common.csproj"
+      "path": "../Common/Mmu.CleanArchitecture.LanguageExtensions.csproj",
+      "msbuildProject": "../Common/Mmu.CleanArchitecture.LanguageExtensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Mmu.CleanArchitecture.Common >= 1.0.0"
+      "Mmu.CleanArchitecture.LanguageExtensions >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -92,8 +92,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj": {
-              "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj"
+            "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj": {
+              "projectPath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj"
             }
           }
         }

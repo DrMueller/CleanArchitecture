@@ -1,5 +1,5 @@
 ﻿using System;
-using Mmu.CleanArchitecture.DomainModels.Areas.Individuals;
+using Mmu.CleanArchitecture.DomainModels.Areas.Individuals.Models;
 
 namespace Mmu.CleanArchitecture.UseCases.Areas.Individuals.CreateIndividual.Dtos
 {

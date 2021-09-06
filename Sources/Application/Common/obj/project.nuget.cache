@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fx9J8dX1wuggm7c7gV9UZZpF1n1b8WWZ23oCRijaNmyEPzbP2XWokNjFN38RwTAPCdc6w+VvoPNtb898HkHqTA==",
+  "dgSpecHash": "sWjjQNAWCp6U6WcmQHWx1Oj4zZ+P9lkZexvvudAOIJ/QtiVCaI4k3t9wQmLxgwLYhzmVHmMUNVerUeOp/Z7PFw==",
   "success": true,
-  "projectFilePath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.Common.csproj",
+  "projectFilePath": "C:\\MyGit\\Personal\\CleanArchitecture\\Sources\\Application\\Common\\Mmu.CleanArchitecture.LanguageExtensions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mlm\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512",
     "C:\\Users\\mlm\\.nuget\\packages\\microsoft.codeanalysis.netanalyzers\\5.0.3\\microsoft.codeanalysis.netanalyzers.5.0.3.nupkg.sha512",
