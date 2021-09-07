@@ -60,7 +60,7 @@ namespace Mmu.CleanArchitecture.WebApi.Infrastructure.Initialization
                         new OpenApiInfo
                         {
                             Version = "v1",
-                            Title = "Triana API",
+                            Title = "CleanArchitecture API",
                             Description = @"<p>This is the CleanArchitecture API. Below you find the currently implemented endpoints with the according request method(s).</p>"
                         });
 

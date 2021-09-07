@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts;
 using Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Factories;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Models;
 using Mmu.CleanArchitecture.DomainModels.Areas.Base.Specifications;
@@ -11,17 +12,16 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.Querying.Services.Implementatio
 {
     public class QueryService : IQueryService
     {
-        private readonly IAppDbContextFactory _appDbContextFactory;
+        private readonly IAppDbContext _appDbContext;
 
         public QueryService(IAppDbContextFactory appDbContextFactory)
         {
-            _appDbContextFactory = appDbContextFactory;
+            _appDbContext = appDbContextFactory.Create();
         }
 
         public async Task<IReadOnlyCollection<TResult>> QueryAsync<TEntity, TResult>(ISpecification<TEntity, TResult> spec) where TEntity : EntityBase
         {
-            using var appDbContext = _appDbContextFactory.Create();
-            var dbSet = appDbContext.Set<TEntity>().AsNoTracking();
+            var dbSet = _appDbContext.Set<TEntity>().AsNoTracking();
 
             var query = spec.Apply(dbSet);
 
@@ -33,8 +33,7 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.Querying.Services.Implementatio
 
         public async Task<IReadOnlyCollection<TEntity>> QueryAsync<TEntity>(ISpecification<TEntity> spec) where TEntity : EntityBase
         {
-            using var appDbContext = _appDbContextFactory.Create();
-            var dbSet = appDbContext.Set<TEntity>().AsNoTracking();
+            var dbSet = _appDbContext.Set<TEntity>().AsNoTracking();
             var query = spec.Apply(dbSet);
 
             var result = await query.ToListAsync();

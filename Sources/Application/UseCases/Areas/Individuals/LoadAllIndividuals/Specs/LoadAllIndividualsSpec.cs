@@ -18,7 +18,8 @@ namespace Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadAllIndividuals.Sp
                     BirthDate = ind.BirthDate,
                     FirstName = ind.FirstName,
                     GenderDescription = ind.Gender == Gender.Male ? IndividualResultDto.GenderMale : IndividualResultDto.GenderFemale,
-                    LastName = ind.LastName
+                    LastName = ind.LastName,
+                    IndividualId = ind.Id
                 };
             }
         }

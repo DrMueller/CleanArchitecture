@@ -14,5 +14,7 @@ namespace Mmu.CleanArchitecture.UseCases.Areas.Individuals.LoadAllIndividuals.Dt
         public string GenderDescription { get; set; }
 
         public string LastName { get; set; }
+
+        public long IndividualId { get; set; }
     }
 }

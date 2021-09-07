@@ -4,12 +4,12 @@ using Mmu.CleanArchitecture.DomainModels.Areas.Base.Specifications;
 
 namespace Mmu.CleanArchitecture.DomainModels.Areas.Common.Specs
 {
-    public class LoadEntityByIdSpec<TEntity> : ISpecification<TEntity>
+    public class EntityByIdSpec<TEntity> : ISpecification<TEntity>
         where TEntity : EntityBase
     {
         private readonly long _entityId;
 
-        public LoadEntityByIdSpec(long entityId)
+        public EntityByIdSpec(long entityId)
         {
             _entityId = entityId;
         }

@@ -7,8 +7,4 @@
 		<AnalysisMode>AllEnabledByDefault</AnalysisMode>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\Common\Mmu.CleanArchitecture.LanguageExtensions.csproj" />
-	</ItemGroup>
-
 </Project>
