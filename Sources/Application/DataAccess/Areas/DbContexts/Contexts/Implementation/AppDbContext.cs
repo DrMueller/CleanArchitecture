@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Mmu.CleanArchitecture.DataAccess.Areas.TypeConfigurations.Base;
 
 namespace Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts.Implementation
 {
@@ -23,10 +22,10 @@ namespace Mmu.CleanArchitecture.DataAccess.Areas.DbContexts.Contexts.Implementat
             optionsBuilder.ConfigureWarnings(warnings => warnings.Throw());
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(EntityConfigBase<>).Assembly);
-        }
+        ////protected override void OnModelCreating(ModelBuilder modelBuilder)
+        ////{
+        ////    base.OnModelCreating(modelBuilder);
+        ////    modelBuilder.ApplyConfigurationsFromAssembly(typeof(EntityConfigBase<>).Assembly);
+        ////}
     }
 }
